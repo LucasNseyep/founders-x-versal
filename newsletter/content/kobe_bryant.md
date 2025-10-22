@@ -1,6 +1,6 @@
 # Kobe Bryant
 
-<img title="Kobe Bryant" alt="Picture of Kobe Bryant Dunking" src="images/kobe_bryant.png" width="400">
+<!-- <img title="Kobe Bryant" alt="Picture of Kobe Bryant Dunking" src="images/kobe_bryant.png" width="400"> -->
 
 Kobe Bryant’s quest began in childhood—an almost inhuman pursuit of greatness. Even at eight years old, he believed he would one day become one of the best to ever play the game. Growing up in Italy, where his father played professionally, gave him a different kind of foundation. While other kids chased flash and flair, Kobe obsessed over footwork, balance, and the geometry of the game. His self-belief was so intense it looked like delusion to others, but he carried it like armor—the dream of being the exception.
 

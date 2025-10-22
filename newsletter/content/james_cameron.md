@@ -1,6 +1,6 @@
 # James Cameron
 
-<img title="James Cameron" alt="Picture of James Cameron in a cockpit" src="images/james_cameron.png" width="400">
+<!-- <img title="James Cameron" alt="Picture of James Cameron in a cockpit" src="images/james_cameron.png" width="400"> -->
 
 James Cameron’s journey began in the ordinary world of a truck driver, but his mind was always elsewhere—dedicated to tinkering, dreaming, and building things. As a child he devoured Jacques Cousteau documentaries, becoming fascinated with exploration and the deep ocean. From an early age he was drawn to difficult challenges; “hard is like a magnet” to him. He believed in the power of the individual and that fate could be engineered through work.
 
