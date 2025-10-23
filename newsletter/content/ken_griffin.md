@@ -1,6 +1,7 @@
 # Ken Griffin
 
-<!-- <img title="Ken Griffin" alt="Picture of Ken Griffin in a Skyscraper" src="images/ken_griffin.png" width="400"> -->
+![Picture of Ken Griffin in a Skyscraper](https://raw.githubusercontent.com/LucasNseyep/founders-x-versal/refs/heads/master/newsletter/content/images/ken_griffin.png)
+
 
 Ken Griffin’s interest in markets began early. In third grade, he wrote a school paper saying he wanted to learn how the stock market worked—a curiosity that never left him. As he later put it, “I’ve always been interested in the stock market for reasons I don’t fully understand. In third grade, I wrote a paper that I wanted to learn how the stock market works, and I’ve been on that journey now for almost 40 years.”
 

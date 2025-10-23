@@ -1,6 +1,6 @@
 # Michael Dell
 
-<!-- <img title="Michael Dell" alt="Black and White Portrait of Michael Dell" src="images/michael_dell.png" width="400"> -->
+![Black and White Portrait of Michael Dell](https://raw.githubusercontent.com/LucasNseyep/founders-x-versal/refs/heads/master/newsletter/content/images/michael_dell.png)
 
 Michael Dell's journey began not in a garage, but in a Houston home where the language of his upbringing was “play nice, but win.” His youth was defined by a fascination with business and a passion for solving intricate puzzles, leading him to idolize entrepreneurs who challenged the status quo. By age thirteen, he used his own savings to buy an Apple II computer, which he promptly disassembled to see how it worked. This led to his singular insight upon reviewing the IBM PC in 1981: the world’s most successful company had used off-the-shelf parts. That revelation fueled his ambition. As a teenager running a profitable side business, he declared to his worried father, “I want to compete with IBM.” To his father, it sounded naive; to Michael, it was destiny.
 

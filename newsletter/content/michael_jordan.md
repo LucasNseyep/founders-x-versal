@@ -1,7 +1,6 @@
 # Michael Jordan
 
-<!-- <img title="Michael Jordan" alt="Picture of Michael Jordan doing a 360 Dunk" src="images/michael_jordan.png" width="400"> -->
-
+![Picture of Michael Jordan performing a 360 Dunk](https://raw.githubusercontent.com/LucasNseyep/founders-x-versal/refs/heads/master/newsletter/content/images/michael_jordan.png)
 
 Michael Jordan's journey began with a powerful slight: his high school varsity coach cut him from the team at age fifteen. The defeat hit him like a boulder; he went to his room and cried. But that pain became the nuclear fuel rods of his great fire. His father’s low expectations—suggesting Michael was too lazy for a real job—fueled him even more. From that moment, he had only one goal: to be a professional athlete.
 

@@ -1,4 +1,6 @@
 import os
+import random
+import glob
 import smtplib
 import ssl
 from email.message import EmailMessage
@@ -10,19 +12,21 @@ load_dotenv(dotenv_path=Path(__file__).parent / ".env")
 
 sender_email = os.environ.get("SENDER_EMAIL")
 app_password = os.environ.get("APP_PASSWORD")
-to_emails = os.environ.get("TO_EMAILS")
-# cc_emails = os.environ.get("CC_EMAILS")
-# bcc_emails = os.environ.get("BCC_EMAILS")
 
-print(app_password)
+def parse_list(env_value: str) -> list[str]:
+    if not env_value:
+        return []
+    return [x.strip() for x in env_value.split(",") if x.strip()]
 
-# SENDER_EMAIL = "lucas.nseyep@gmail.com"
-# APP_PASSWORD = "lagc zxoi hpzs fkxo"
-TO_EMAILS  = ["lucas.nseyep@gmail.com"]
-CC_EMAILS  = []
-BCC_EMAILS = []
+to_emails = parse_list(os.environ.get("TO_EMAILS"))
+cc_emails = parse_list(os.environ.get("CC_EMAILS"))
+bcc_emails = parse_list(os.environ.get("BCC_EMAILS"))
 
-MD_PATH = Path("./newsletter/content/james_cameron.md")
+content = glob.glob("./newsletter/content/*.md")
+
+path = random.choice(content)
+
+MD_PATH = Path(path)
 
 def _extract_subject(markdown_text: str, fallback: str = "Stay Focused - Never Give Up") -> str:
     """
@@ -72,10 +76,10 @@ def send_email(md_file: Path):
     msg['From'] = sender_email
 
     # For headers, use comma-separated strings (RFC compliant)
-    if TO_EMAILS:
-        msg["To"] = ", ".join(TO_EMAILS)
-    if CC_EMAILS:
-        msg["Cc"] = ", ".join(CC_EMAILS)
+    if to_emails:
+        msg["To"] = ", ".join(to_emails)
+    if cc_emails:
+        msg["Cc"] = ", ".join(cc_emails)
     # NOTE: Do NOT set a "Bcc" header; BCCs should not appear in headers.
 
     msg.set_content(markdown_text)
@@ -84,7 +88,7 @@ def send_email(md_file: Path):
     msg.add_alternative(html, subtype="html")
 
     # Build the actual recipient list for SMTP (To + Cc + Bcc), de-duplicated
-    all_recipients = list({email.strip().lower(): email for email in (TO_EMAILS + CC_EMAILS + BCC_EMAILS)}.values())
+    all_recipients = list({email.strip().lower(): email for email in (to_emails + cc_emails + bcc_emails)}.values())
     if not all_recipients:
         raise ValueError("No recipients provided. Add at least one email to TO_EMAILS/CC_EMAILS/BCC_EMAILS.")
     # --- Send the Email ---
